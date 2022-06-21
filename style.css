@@ -49,7 +49,7 @@ picture {
 }
 
 picture img {
-  max-width: 500px;
+  max-width: 80%;
   mix-blend-mode: multiply;
   filter: grayscale(100%);
 }
@@ -100,4 +100,19 @@ picture img {
 }
 .contraseña p {
   margin-bottom: 5px;
+}
+@media (max-width: 500px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+  }
+  .picture img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
