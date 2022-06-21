@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  background-color: black;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+/* titulo */
+h1 {
+  color: wheat;
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 25px;
+  animation: probando 2s infinite 1.5s alternate ease;
+}
+@keyframes probando {
+  0% {
+    transform: 0.3;
+  }
+  25% {
+    transform: scale(0.4);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  75% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+
+/* imagen de fondo con filtros */
+
+picture {
+  display: inline-block;
+  background-color: rgb(255, 0, 212);
+  border-radius: 2rem;
+}
+
+picture img {
+  max-width: 500px;
+  mix-blend-mode: multiply;
+  filter: grayscale(100%);
+}
+/* login */
+.contenedor {
+  max-width: 900px;
+  display: inline-block;
+  background-color: rgb(255, 0, 212);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 150px 0px 0px;
+  position: relative;
+  animation: apareciendo ease 1s 0.5s;
+}
+@keyframes apareciendo {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.input input {
+  padding: 10px;
+  margin: 0px 0px 25px 0px;
+  border: none;
+  border-radius: 2rem;
+}
+.boton {
+  background-color: rgb(183, 79, 199);
+  color: white;
+  padding: 5px 74px;
+  border-radius: 2rem;
+}
+.boton:hover {
+  background-color: black;
+  color: white;
+}
+.contraseña {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contraseña p {
+  margin-bottom: 5px;
+}
